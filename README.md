@@ -17,172 +17,128 @@ Este repositório contém as soluções para os desafios propostos no programa *
 - 🧮 Operações matemáticas
 - 🎯 Estruturas condicionais
 - 📝 Concatenação de strings
+- 🔄 Funções e parâmetros
+- ✨ Lógica de programação
 
 ---
 
 ## 🎯 Desafios Realizados
 
-### 🏷️ **Desafio 1: Alterando o Título**
-**Objetivo:** Alterar o conteúdo da tag h1 usando `document.querySelector`
+### 1. Exibir "Olá, mundo!" no console
+Função básica para exibir uma mensagem no console.
 
 ```javascript
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Hora do Desafio';
-```
-
-### 🖱️ **Desafio 2: Função Console**
-**Objetivo:** Criar uma função que exiba mensagem no console quando o botão for clicado
-
-- index.HTML
-```html
- <button onclick="escreverConsole()" class="button">Console</button>
-```
-
-- app.js
-```javascript
-function escreverConsole(){
-    console.log('O botão foi clicado');
+function exibirTexto() {
+  console.log('Olá, mundo!');
 }
+
+exibirTexto();
 ```
 
-### ⚠️ **Desafio 3: Função Alert**
-**Objetivo:** Criar uma função que exiba um alerta com mensagem de amor ao JavaScript
+### 2. Saudação personalizada
+Função que recebe um nome como parâmetro e exibe uma saudação personalizada.
 
-- index.HTML
-```html
- <button onclick="escreverAlert()" class="button">Alert</button>
-```
-
-- app.js
 ```javascript
-function escreverAlert(){
-    alert('Eu amo JS');
+function saudacao(nome) {
+  console.log(`Olá, ${nome}!`);
 }
+
+saudacao('Flávio');
 ```
 
-### 🌆 **Desafio 4: Prompt Interativo**
-**Objetivo:** Solicitar nome de uma cidade e exibir mensagem personalizada
+### 3. Calcular o dobro de um número
+Função que recebe um número e retorna o dobro dele.
 
-- index.HTML
-```html
- <button onclick="abrirPrompt()" class="button">Prompt</button>
-```
-
-- app.js
 ```javascript
-function abrirPrompt(){
-    let cidade = prompt('Digite uma cidade do Brasil');
-    alert(`Estive em ${cidade} e lembrei de você`);
+function calcularDobro(numero) {
+  return numero * 2;
 }
+
+let resultado = calcularDobro(8);
+console.log(resultado); // Output: 16
 ```
 
-### ➕ **Desafio 5: Calculadora Simples**
-**Objetivo:** Realizar soma de dois números inteiros inseridos pelo usuário
+### 4. Calcular média de três números
+Função que recebe três números como parâmetros e retorna a média aritmética.
 
-- index.HTML
-```html
- <<button onclick="somar()" class="button">Soma</button>
-```
-
-- app.js
 ```javascript
-function somar(){
-    let num1 = parseInt(prompt('Digite um número'));
-    let num2 = parseInt(prompt('Digite outro número'));
-    let soma = num1 + num2;
-    alert(`A soma dos números é ${soma}`);
+function calcularMedia(num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
 }
+
+let media = calcularMedia(2, 7, 9);
+console.log(media); // Output: 6
+```
+
+### 5. Encontrar o maior número
+Função que recebe dois números e retorna o maior entre eles.
+
+```javascript
+function exibirMaiorNumero(num1, num2) {
+  return num1 > num2 ? num1 : num2;
+}
+
+let numeroMaior = exibirMaiorNumero(7, 9);
+console.log(numeroMaior); // Output: 9
+```
+
+### 6. Calcular quadrado de um número
+Função que recebe um número e retorna o resultado da multiplicação dele por ele mesmo.
+
+```javascript
+function quadradoNumero(numero) {
+  return numero * numero;
+}
+
+let resultadoQuadrado = quadradoNumero(6);
+console.log(resultadoQuadrado); // Output: 36
 ```
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Como Executar
 
-- **JavaScript ES6+**
-- **HTML5**
-- **CSS3**
-- **DOM Manipulation**
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-📦 one-desafios-javascript/
-├── 📄 index.html          # Página principal com botões
-├── 🎨 style.css           # Estilos da aplicação
-├── ⚡ script.js           # Lógica JavaScript
-└── 📋 README.md           # Documentação do projeto
+1. Clone este repositório:
+```bash
+git clone https://github.com/seu-usuario/one-logica-javascript.git
 ```
 
----
+2. Navegue até a pasta do projeto:
+```bash
+cd one-logica-javascript
+```
 
-## 🚀 Como Executar
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/one-desafios-javascript.git
-   ```
-
-2. **Navegue até o diretório:**
-   ```bash
-   cd one-desafios-javascript
-   ```
-
-3. **Abra o arquivo `index.html` no seu navegador preferido**
-
-4. **Teste cada funcionalidade clicando nos botões correspondentes**
+3. Abra os arquivos JavaScript no seu editor preferido ou execute diretamente no console do navegador.
 
 ---
 
-## 🎓 Conceitos Aprendidos
+## 📚 Conceitos Aprendidos
 
-Durante o desenvolvimento destes desafios, foram praticados os seguintes conceitos:
-
-- **Seleção de Elementos DOM**: Uso do `document.querySelector()` para acessar elementos HTML
-- **Manipulação de Conteúdo**: Alteração de conteúdo com `innerHTML`
-- **Funções JavaScript**: Criação e chamada de funções
-- **Interação com Usuário**: Utilização de `alert()`, `prompt()` e `console.log()`
-- **Conversão de Tipos**: Uso do `parseInt()` para converter strings em números
-- **Template Literals**: Concatenação moderna com `${variavel}`
-- **Eventos**: Associação de funções aos eventos de clique
-
----
-
-## 🤝 Contribuições
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- **Funções**: Criação e uso de funções com e sem parâmetros
+- **Parâmetros e Argumentos**: Passagem de valores para funções
+- **Return**: Retorno de valores das funções
+- **Template Literals**: Uso de backticks para interpolação de strings
+- **Operadores Condicionais**: Uso do operador ternário
+- **Operações Matemáticas**: Cálculos básicos e intermediários
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💙 durante o programa **ONE - Oracle Next Education**
+Desenvolvido durante o programa **ONE - Oracle Next Education** 
 
 ---
 
-## 🔗 Links Úteis
+## 📄 Licença
 
-- [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
-- [Alura](https://www.alura.com.br/)
-- [Documentação JavaScript - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [Curso de Lógica de Programação](https://cursos.alura.com.br/)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love">
-  <img src="https://img.shields.io/badge/Powered%20by-JavaScript-yellow?style=for-the-badge&logo=javascript" alt="Powered by JavaScript">
-</div>
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+---
+
+⭐ Se este projeto te ajudou, deixe uma estrela no repositório!
