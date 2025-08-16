@@ -12,13 +12,12 @@
 
 Este repositório contém as soluções para os desafios propostos no programa **ONE - Oracle Next Education** em parceria com a **Alura**. Cada exercício foi desenvolvido para praticar conceitos fundamentais de JavaScript, incluindo:
 
-- 🔧 Manipulação do DOM
-- 💬 Interação com o usuário (alerts, prompts)
-- 🧮 Operações matemáticas
-- 🎯 Estruturas condicionais
-- 📝 Concatenação de strings
-- 🔄 Funções e parâmetros
-- ✨ Lógica de programação
+- 🔄 Funções com e sem parâmetros
+- 🧮 Operações matemáticas básicas
+- 📤 Valores de retorno (return)
+- 📝 Template literals e interpolação
+- 🎯 Operadores condicionais (ternário)
+- ✨ Lógica de programação básica
 
 ---
 
