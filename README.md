@@ -33,6 +33,12 @@ titulo.innerHTML = 'Hora do Desafio';
 ### 🖱️ **Desafio 2: Função Console**
 **Objetivo:** Criar uma função que exiba mensagem no console quando o botão for clicado
 
+- index.HTML
+```html
+ <button onclick="escreverConsole()" class="button">Console</button>
+```
+
+- app.js
 ```javascript
 function escreverConsole(){
     console.log('O botão foi clicado');
@@ -42,6 +48,12 @@ function escreverConsole(){
 ### ⚠️ **Desafio 3: Função Alert**
 **Objetivo:** Criar uma função que exiba um alerta com mensagem de amor ao JavaScript
 
+- index.HTML
+```html
+ <button onclick="escreverAlert()" class="button">Alert</button>
+```
+
+- app.js
 ```javascript
 function escreverAlert(){
     alert('Eu amo JS');
@@ -51,6 +63,12 @@ function escreverAlert(){
 ### 🌆 **Desafio 4: Prompt Interativo**
 **Objetivo:** Solicitar nome de uma cidade e exibir mensagem personalizada
 
+- index.HTML
+```html
+ <button onclick="abrirPrompt()" class="button">Prompt</button>
+```
+
+- app.js
 ```javascript
 function abrirPrompt(){
     let cidade = prompt('Digite uma cidade do Brasil');
@@ -61,6 +79,12 @@ function abrirPrompt(){
 ### ➕ **Desafio 5: Calculadora Simples**
 **Objetivo:** Realizar soma de dois números inteiros inseridos pelo usuário
 
+- index.HTML
+```html
+ <<button onclick="somar()" class="button">Soma</button>
+```
+
+- app.js
 ```javascript
 function somar(){
     let num1 = parseInt(prompt('Digite um número'));
