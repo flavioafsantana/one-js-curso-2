@@ -1,4 +1,4 @@
-# 🚀 ONE - Oracle Next Education | Lógica de Programação - Desafios JavaScript
+# 🧮 Exercícios JavaScript - Funções Matemáticas e Cálculos
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://www.oracle.com/br/education/oracle-next-education/)
@@ -10,87 +10,85 @@
 
 ## 📖 Sobre o Projeto
 
-Este repositório contém as soluções para os desafios propostos no programa **ONE - Oracle Next Education** em parceria com a **Alura**. Cada exercício foi desenvolvido para praticar conceitos fundamentais de JavaScript, incluindo:
+Este repositório contém uma coleção de **6 exercícios práticos em JavaScript** desenvolvidos durante o programa **ONE - Oracle Next Education** em parceria com a **Alura**. Os exercícios são focados no desenvolvimento de funções para cálculos matemáticos e operações básicas. Cada exercício foi desenvolvido para praticar conceitos fundamentais de JavaScript, incluindo:
 
-- 🔧 Manipulação do DOM
-- 💬 Interação com o usuário (alerts, prompts)
+- 🔧 Criação de funções
 - 🧮 Operações matemáticas
-- 🎯 Estruturas condicionais
-- 📝 Concatenação de strings
+- 🔄 Recursividade
+- 📊 Cálculos geométricos
+- 💱 Conversões de moedas
+- 📐 Fórmulas matemáticas
 
 ---
 
-## 🎯 Desafios Realizados
+## 🎯 Exercícios Realizados
 
-### 🏷️ **Desafio 1: Alterando o Título**
-**Objetivo:** Alterar o conteúdo da tag h1 usando `document.querySelector`
+### 💪 **Exercício 1: Calculadora de IMC**
+**Objetivo:** Calcular o Índice de Massa Corporal (IMC) de uma pessoa
 
 ```javascript
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Hora do Desafio';
-```
-
-### 🖱️ **Desafio 2: Função Console**
-**Objetivo:** Criar uma função que exiba mensagem no console quando o botão for clicado
-
-- index.HTML
-```html
- <button onclick="escreverConsole()" class="button">Console</button>
-```
-
-- app.js
-```javascript
-function escreverConsole(){
-    console.log('O botão foi clicado');
+function calcularImc(peso, altura){
+    return peso / (altura * altura);
 }
 ```
 
-### ⚠️ **Desafio 3: Função Alert**
-**Objetivo:** Criar uma função que exiba um alerta com mensagem de amor ao JavaScript
+### 🔢 **Exercício 2: Calculadora de Fatorial**
+**Objetivo:** Calcular o fatorial de um número usando recursividade
 
-- index.HTML
-```html
- <button onclick="escreverAlert()" class="button">Alert</button>
-```
-
-- app.js
 ```javascript
-function escreverAlert(){
-    alert('Eu amo JS');
+function calcularFatorial(numero){
+    if(numero === 0 || numero === 1){
+        return 1;
+    } else {
+        return numero * calcularFatorial(numero - 1);
+    }
 }
 ```
 
-### 🌆 **Desafio 4: Prompt Interativo**
-**Objetivo:** Solicitar nome de uma cidade e exibir mensagem personalizada
+### 💵 **Exercício 3: Conversor de Dólar para Real**
+**Objetivo:** Converter valores de dólar americano para real brasileiro
 
-- index.HTML
-```html
- <button onclick="abrirPrompt()" class="button">Prompt</button>
-```
-
-- app.js
 ```javascript
-function abrirPrompt(){
-    let cidade = prompt('Digite uma cidade do Brasil');
-    alert(`Estive em ${cidade} e lembrei de você`);
+function converterDolarParaReal(valorEmDolar){
+    const cotacaoDolar = 4.80;
+    return valorEmDolar * cotacaoDolar;
 }
 ```
 
-### ➕ **Desafio 5: Calculadora Simples**
-**Objetivo:** Realizar soma de dois números inteiros inseridos pelo usuário
+### 📐 **Exercício 4: Calculadora Retangular**
+**Objetivo:** Calcular área e perímetro de uma sala retangular
 
-- index.HTML
-```html
- <<button onclick="somar()" class="button">Soma</button>
+```javascript
+function calcularAreaEPerimetroRetangular(altura, largura){
+    const area = altura * largura;
+    const perimetro = 2 * (altura + largura);
+    console.log(`Área: ${area}`);
+    console.log(`Perímetro: ${perimetro}`);
+}
 ```
 
-- app.js
+### ⭕ **Exercício 5: Calculadora Circular**
+**Objetivo:** Calcular área e perímetro de uma sala circular
+
 ```javascript
-function somar(){
-    let num1 = parseInt(prompt('Digite um número'));
-    let num2 = parseInt(prompt('Digite outro número'));
-    let soma = num1 + num2;
-    alert(`A soma dos números é ${soma}`);
+function calcularAreaEPerimetroCircular(raio){
+    const pi = 3.14;
+    const area = pi * (raio * raio);
+    const perimetro = 2 * pi * raio;
+    console.log(`Área: ${area}`);
+    console.log(`Perímetro: ${perimetro}`);
+}
+```
+
+### 🔢 **Exercício 6: Gerador de Tabuada**
+**Objetivo:** Mostrar a tabuada completa de um número
+
+```javascript
+function mostrarTabuada(numero){
+    for(let i = 1; i <= 10; i++){
+        const resultado = numero * i;
+        console.log(`${numero} x ${i} = ${resultado}`);
+    }
 }
 ```
 
@@ -99,19 +97,18 @@ function somar(){
 ## 🛠️ Tecnologias Utilizadas
 
 - **JavaScript ES6+**
-- **HTML5**
-- **CSS3**
-- **DOM Manipulation**
+- **Node.js** (para execução)
+- **Recursividade**
+- **Loops e Condicionais**
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-📦 one-desafios-javascript/
-├── 📄 index.html          # Página principal com botões
-├── 🎨 style.css           # Estilos da aplicação
-├── ⚡ script.js           # Lógica JavaScript
+📦 exercicios-javascript/
+├── 📄 exercicios.js       # Arquivo principal com as funções
+├── 🧪 exemplos.js         # Exemplos de uso das funções
 └── 📋 README.md           # Documentação do projeto
 ```
 
@@ -121,31 +118,43 @@ function somar(){
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/one-desafios-javascript.git
+   git clone https://github.com/seu-usuario/exercicios-javascript.git
    ```
 
 2. **Navegue até o diretório:**
    ```bash
-   cd one-desafios-javascript
+   cd exercicios-javascript
    ```
 
-3. **Abra o arquivo `index.html` no seu navegador preferido**
+3. **Execute o arquivo no Node.js:**
+   ```bash
+   node exercicios.js
+   ```
 
-4. **Teste cada funcionalidade clicando nos botões correspondentes**
+4. **Teste cada função chamando-as individualmente:**
+   ```javascript
+   // Exemplo de uso
+   console.log(calcularImc(70, 1.75));
+   console.log(calcularFatorial(5));
+   calcularAreaEPerimetroRetangular(5, 8);
+   ```
 
 ---
 
 ## 🎓 Conceitos Aprendidos
 
-Durante o desenvolvimento destes desafios, foram praticados os seguintes conceitos:
+Durante o desenvolvimento destes exercícios, foram praticados os seguintes conceitos:
 
-- **Seleção de Elementos DOM**: Uso do `document.querySelector()` para acessar elementos HTML
-- **Manipulação de Conteúdo**: Alteração de conteúdo com `innerHTML`
-- **Funções JavaScript**: Criação e chamada de funções
-- **Interação com Usuário**: Utilização de `alert()`, `prompt()` e `console.log()`
-- **Conversão de Tipos**: Uso do `parseInt()` para converter strings em números
-- **Template Literals**: Concatenação moderna com `${variavel}`
-- **Eventos**: Associação de funções aos eventos de clique
+- **Declaração de Funções**: Criação de funções com `function`
+- **Parâmetros e Argumentos**: Passagem de valores para funções
+- **Valores de Retorno**: Uso do `return` para retornar resultados
+- **Recursividade**: Funções que chamam a si mesmas
+- **Estruturas de Repetição**: Uso do `for` para loops
+- **Condicionais**: Implementação de `if/else`
+- **Operações Matemáticas**: Cálculos diversos (potência, multiplicação, divisão)
+- **Template Literals**: Interpolação de strings com `${}`
+- **Constantes**: Declaração de valores fixos com `const`
+- **Console.log**: Saída de dados no terminal
 
 ---
 
@@ -154,9 +163,9 @@ Durante o desenvolvimento destes desafios, foram praticados os seguintes conceit
 Contribuições são sempre bem-vindas! Para contribuir:
 
 1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcao`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova função'`)
+4. Push para a branch (`git push origin feature/nova-funcao`)
 5. Abra um Pull Request
 
 ---
@@ -178,6 +187,8 @@ Desenvolvido com 💙 durante o programa **ONE - Oracle Next Education**
 - [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
 - [Alura](https://www.alura.com.br/)
 - [Documentação JavaScript - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/)
+- [JavaScript Info](https://javascript.info/)
 - [Curso de Lógica de Programação](https://cursos.alura.com.br/)
 
 ---
