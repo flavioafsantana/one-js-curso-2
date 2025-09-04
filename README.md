@@ -1,4 +1,4 @@
-# 🚀 ONE - Oracle Next Education | Lógica de Programação - Desafios JavaScript
+# 📋 Exercícios JavaScript - Manipulação de Arrays e Listas
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://www.oracle.com/br/education/oracle-next-education/)
@@ -10,88 +10,62 @@
 
 ## 📖 Sobre o Projeto
 
-Este repositório contém as soluções para os desafios propostos no programa **ONE - Oracle Next Education** em parceria com a **Alura**. Cada exercício foi desenvolvido para praticar conceitos fundamentais de JavaScript, incluindo:
+Este repositório contém uma coleção de **6 exercícios práticos em JavaScript** desenvolvidos durante o programa **ONE - Oracle Next Education** em parceria com a **Alura**. Os exercícios são focados na manipulação de arrays (listas) e operações básicas com estruturas de dados. Cada exercício foi desenvolvido para praticar conceitos fundamentais de JavaScript, incluindo:
 
-- 🔧 Manipulação do DOM
-- 💬 Interação com o usuário (alerts, prompts)
-- 🧮 Operações matemáticas
-- 🎯 Estruturas condicionais
-- 📝 Concatenação de strings
+- 📝 Criação de arrays
+- 🔍 Acesso a elementos específicos
+- ➕ Adição de elementos com `push()`
+- 📊 Manipulação de índices
+- 🖥️ Exibição de dados no console
+- 🏗️ Estruturas de dados básicas
 
 ---
 
-## 🎯 Desafios Realizados
+## 🎯 Exercícios Realizados
 
-### 🏷️ **Desafio 1: Alterando o Título**
-**Objetivo:** Alterar o conteúdo da tag h1 usando `document.querySelector`
+### 📄 **Exercício 1: Lista Vazia**
+**Objetivo:** Criar uma lista vazia chamada `listaGenerica`
 
 ```javascript
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Hora do Desafio';
+let listaGenerica = [];
 ```
 
-### 🖱️ **Desafio 2: Função Console**
-**Objetivo:** Criar uma função que exiba mensagem no console quando o botão for clicado
+### 💻 **Exercício 2: Lista de Linguagens de Programação**
+**Objetivo:** Criar uma lista com linguagens de programação populares
 
-- index.HTML
-```html
- <button onclick="escreverConsole()" class="button">Console</button>
-```
-
-- app.js
 ```javascript
-function escreverConsole(){
-    console.log('O botão foi clicado');
-}
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
 ```
 
-### ⚠️ **Desafio 3: Função Alert**
-**Objetivo:** Criar uma função que exiba um alerta com mensagem de amor ao JavaScript
+### ➕ **Exercício 3: Adicionando Elementos**
+**Objetivo:** Adicionar mais linguagens à lista usando `push()`
 
-- index.HTML
-```html
- <button onclick="escreverAlert()" class="button">Alert</button>
-```
-
-- app.js
 ```javascript
-function escreverAlert(){
-    alert('Eu amo JS');
-}
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang');
 ```
 
-### 🌆 **Desafio 4: Prompt Interativo**
-**Objetivo:** Solicitar nome de uma cidade e exibir mensagem personalizada
+### 1️⃣ **Exercício 4: Primeiro Elemento**
+**Objetivo:** Exibir apenas o primeiro elemento de uma lista de nomes
 
-- index.HTML
-```html
- <button onclick="abrirPrompt()" class="button">Prompt</button>
-```
-
-- app.js
 ```javascript
-function abrirPrompt(){
-    let cidade = prompt('Digite uma cidade do Brasil');
-    alert(`Estive em ${cidade} e lembrei de você`);
-}
+let nomes = ['João', 'Maria', 'Pedro'];
+console.log(nomes[0]);
 ```
 
-### ➕ **Desafio 5: Calculadora Simples**
-**Objetivo:** Realizar soma de dois números inteiros inseridos pelo usuário
+### 2️⃣ **Exercício 5: Segundo Elemento**
+**Objetivo:** Exibir apenas o segundo elemento de uma lista de nomes
 
-- index.HTML
-```html
- <<button onclick="somar()" class="button">Soma</button>
-```
-
-- app.js
 ```javascript
-function somar(){
-    let num1 = parseInt(prompt('Digite um número'));
-    let num2 = parseInt(prompt('Digite outro número'));
-    let soma = num1 + num2;
-    alert(`A soma dos números é ${soma}`);
-}
+let nomes = ['João', 'Maria', 'Pedro'];
+console.log(nomes[1]);
+```
+
+### 🔚 **Exercício 6: Último Elemento**
+**Objetivo:** Exibir apenas o último elemento de uma lista de nomes
+
+```javascript
+let nomes = ['João', 'Maria', 'Pedro'];
+console.log(nomes[2]);
 ```
 
 ---
@@ -99,20 +73,19 @@ function somar(){
 ## 🛠️ Tecnologias Utilizadas
 
 - **JavaScript ES6+**
-- **HTML5**
-- **CSS3**
-- **DOM Manipulation**
+- **Node.js** (para execução)
+- **Arrays/Listas**
+- **Console API**
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-📦 one-desafios-javascript/
-├── 📄 index.html          # Página principal com botões
-├── 🎨 style.css           # Estilos da aplicação
-├── ⚡ script.js           # Lógica JavaScript
-└── 📋 README.md           # Documentação do projeto
+📦 exercicios-arrays-javascript/
+├── 📄 exercicios-arrays.js   # Arquivo principal com os exercícios
+├── 🧪 exemplos.js            # Exemplos de uso e testes
+└── 📋 README.md              # Documentação do projeto
 ```
 
 ---
@@ -121,31 +94,60 @@ function somar(){
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/one-desafios-javascript.git
+   git clone https://github.com/seu-usuario/exercicios-arrays-javascript.git
    ```
 
 2. **Navegue até o diretório:**
    ```bash
-   cd one-desafios-javascript
+   cd exercicios-arrays-javascript
    ```
 
-3. **Abra o arquivo `index.html` no seu navegador preferido**
+3. **Execute o arquivo no Node.js:**
+   ```bash
+   node exercicios-arrays.js
+   ```
 
-4. **Teste cada funcionalidade clicando nos botões correspondentes**
+4. **Teste cada operação individualmente:**
+   ```javascript
+   // Exemplo de uso completo
+   console.log('Lista original:', linguagensDeProgramacao);
+   console.log('Primeiro nome:', nomes[0]);
+   console.log('Segundo nome:', nomes[1]);
+   console.log('Último nome:', nomes[2]);
+   ```
 
 ---
 
 ## 🎓 Conceitos Aprendidos
 
-Durante o desenvolvimento destes desafios, foram praticados os seguintes conceitos:
+Durante o desenvolvimento destes exercícios, foram praticados os seguintes conceitos:
 
-- **Seleção de Elementos DOM**: Uso do `document.querySelector()` para acessar elementos HTML
-- **Manipulação de Conteúdo**: Alteração de conteúdo com `innerHTML`
-- **Funções JavaScript**: Criação e chamada de funções
-- **Interação com Usuário**: Utilização de `alert()`, `prompt()` e `console.log()`
-- **Conversão de Tipos**: Uso do `parseInt()` para converter strings em números
-- **Template Literals**: Concatenação moderna com `${variavel}`
-- **Eventos**: Associação de funções aos eventos de clique
+- **Declaração de Arrays**: Criação de listas com `[]`
+- **Inicialização de Arrays**: Arrays vazios e com valores iniciais
+- **Método Push**: Adição de elementos ao final do array com `push()`
+- **Indexação**: Acesso a elementos específicos usando índices `[0]`, `[1]`, `[2]`
+- **Console.log**: Exibição de dados no terminal
+- **Variáveis let**: Declaração de variáveis mutáveis
+- **Strings em Arrays**: Armazenamento de texto em listas
+- **Múltiplos Parâmetros**: Uso do `push()` com vários elementos
+- **Estruturas de Dados**: Conceitos básicos de organização de informações
+
+---
+
+## 🔍 Exemplos de Saída
+
+Ao executar os exercícios, você verá as seguintes saídas no console:
+
+```
+João
+Maria
+Pedro
+```
+
+A lista `linguagensDeProgramacao` após as modificações conterá:
+```javascript
+['JavaScript', 'C', 'C++', 'Kotlin', 'Python', 'Java', 'Ruby', 'GoLang']
+```
 
 ---
 
@@ -154,9 +156,9 @@ Durante o desenvolvimento destes desafios, foram praticados os seguintes conceit
 Contribuições são sempre bem-vindas! Para contribuir:
 
 1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
+2. Crie uma branch para sua feature (`git checkout -b feature/novo-exercicio`)
+3. Commit suas mudanças (`git commit -m 'Adiciona novo exercício'`)
+4. Push para a branch (`git push origin feature/novo-exercicio`)
 5. Abra um Pull Request
 
 ---
@@ -178,6 +180,8 @@ Desenvolvido com 💙 durante o programa **ONE - Oracle Next Education**
 - [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
 - [Alura](https://www.alura.com.br/)
 - [Documentação JavaScript - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Arrays em JavaScript - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Node.js](https://nodejs.org/)
 - [Curso de Lógica de Programação](https://cursos.alura.com.br/)
 
 ---
